@@ -1,0 +1,793 @@
+/*RESET.CSS*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*END RESET.CSS*/
+
+.wrapper {
+	max-width: 1600px;
+	width: 100%;
+    margin: 0 auto;
+}
+
+.center{
+    max-width: 1100px;
+	width: 100%;
+	margin: 0 auto;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+.header .logo a{
+    color:#cacaca;
+    font-size: 26px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+.header .logo a:hover{
+    color: #505050;
+    border-bottom: 2px solid #ffe400;
+    padding-bottom: 1vh;
+}
+.header .contact a{
+    font-size: 14px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color:#cacaca;
+}
+.header .contact a:hover{
+    color: #505050;
+    border-bottom: 2px solid #ffe400;
+    padding-bottom: 1vh;
+}
+.header .menu {
+    width: 65%;
+}
+.header .menu--closed {
+    display: none;
+}
+.header .menu .menu_list .menu_link{
+    font-size: 14px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color:#cacaca;
+}
+.header .menu .menu_list .menu_link:hover{
+    color: #505050;
+    border-bottom: 2px solid #ffe400;
+    padding-bottom: 1vh;
+}
+.header .burger{
+    width: 20px;
+    height: 20px;
+}
+.header .burger--closed{
+    background: url(../img/burger.svg) no-repeat;
+}
+.header .burger--opened {
+    background: url(../img/close.svg) no-repeat;
+}
+
+.header .menu .menu_list{
+    display: flex;
+    justify-content: space-around;
+}
+
+header .navbar .btn a:hover{
+    color: #505050;
+    border-bottom: 2px solid #ffe400;
+}
+header .navbar .logo a:hover{
+    color: #505050;
+    border-bottom: 2px solid #ffe400;
+}
+.container1{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 3.8% 0 2.5%;
+    
+    width: 93.7%;
+    min-height: 780px;
+}
+.container1 .flex_box1{
+    max-width: 200px;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 5vh;
+    position: relative;
+}
+.container1 .flex_box1 .btn3{
+    transform: rotate(270deg);
+    justify-self: flex-start;
+    margin-top: 25vh;
+    margin-left: -40%;
+}
+.container1 .flex_box1 .btn3 a{
+    color: #cacaca;
+    font-size: 14px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+.container1 .flex_box1 .btn3 a:hover{
+    color: #505050;
+    border-bottom: 2px solid #ffe400;
+    padding-bottom: 1vh;
+}
+.container1 .flex_box1 .logo1{
+    margin-left: 0%;
+}
+.container1 .flex_box1 .logo1 div{
+    margin-top: 20px;
+}
+.container1 .flex_box1 .logo1 a{
+    color: #cacaca;
+    text-decoration: none;
+    
+}
+.container1 .flex_box1 .logo1 a:hover{
+    color: #505050;
+    border-bottom: 2px solid #ffe400;
+    padding-bottom: 1vh;
+    
+}
+.container1 .flex_box2{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 69.3%;
+    margin-right: 1.5%;
+}
+.container1 .flex_box2 .text{
+    position: absolute;
+    top: 300px;
+    left: -19%;
+}
+.container1 .flex_box2 .img1{
+    background-color: #f4f4f4;
+    width:100%;
+}
+.container1 .flex_box2 .img1 .a img{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin: 90px 0 10% 37.3%;
+    width: 63.6%;
+    height: auto;
+    max-height: 570px;
+}
+.container1 .flex_box2 .text .home{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 5vh;
+} 
+.container1 .flex_box2 .text .home a:hover{
+    color: #505050;
+}
+.container1 .flex_box2 .text .home i{
+    display: block;
+    height: 2px;
+    width: 25px;
+    background-color: #cacaca;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.container1 .flex_box2 .text .home a{
+    font-size: 14px;
+    font-family: 'ProximaNovaA', sans-serif;
+    color: #cacaca;
+    font-weight: 400;
+    text-decoration: none;
+}
+.container1 .flex_box2 .text h2{
+    font-size: 62px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    color: #505050;
+}
+.container1 .flex_box2 .text .first{
+    margin-bottom: 2vh;
+}
+.container1 .flex_box2 .text .second{
+    margin-bottom: 7vh;
+}
+.container1 .flex_box2 .btn2{
+    position: relative;  
+}
+.container1 .flex_box2 .btn2 .b div img{
+    width: 20%;
+}
+.container1 .flex_box2 .btn2 a{
+    font-size: 14px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    color: #cacaca;
+    text-decoration: none;
+    position: absolute;
+    margin-top: -3.5vh;
+    margin-left: 8%;
+}
+.container1 .flex_box2 .btn2 a:hover{
+    color: #505050;
+}
+.container2 .center h2{
+    text-align: center;
+    margin-top: 10vh;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #505050;
+}
+.container2 .center p{
+    text-align: center;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #505050;
+    margin-top: 2vh;
+}
+.container2 .center .galary{
+    margin-top: 10vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.container2 .center .galary .flex_box1{
+    margin: 2vh auto;
+    width: 30%; 
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+.container2 .center .galary .flex_box1 .text{
+    width: 75%;
+}
+.container2 .center .galary .flex_box1 .c{
+    margin-right: 5%;
+}
+.container2 .center .galary .flex_box1 h3{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color:#505050;
+}
+.container2 .center .galary p{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color:#505050;
+    text-align: justify;
+}
+.container3 .center ul{
+    display: flex;
+    justify-content: center;
+    margin-top: 9vh;
+}
+.container3 .center ul li{
+    display: inline-block;
+    margin: 0 2%;
+}
+.container3 .center ul li a{
+    color: #7c7c7c;
+    font-size: 14px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 1vh;
+    border-bottom: 2px solid #ffffff;
+}
+.container3 .center ul li a:hover{
+    color:#505050;
+    border-bottom: 2px solid rgb(255, 228, 0);
+}
+.container3 .center .flex_box1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 7vh;
+}
+.container3 .center .flex_box1 .pic{
+    margin: 1% auto
+}
+.container3 .center .flex_box1 .pic .a, .b{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 3vh;
+    color:#7f7841;
+    margin-left: -2%;
+}
+.container3 .center .flex_box1 .pic .c{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 4vh;
+    line-height: 1.5;
+    text-align: center;
+    color:#7f7841;
+    margin-left: -2.5%;
+}
+.container3 .center .flex_box1 .pic .btn{
+    margin-top: 5.5vh;
+    margin-left: -55%;
+    
+}
+.container3 .center .flex_box1 .pic .btn a{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    color:#7f7841;
+    text-decoration: none;
+}
+.container3 .center .flex_box1 .pic .btn a:hover{
+    color: #505050;
+}
+.container3 .btn{
+    position: relative;
+    text-align: center;
+    margin-top: 3vh;
+}
+.container3 .btn img{
+    width: 20%;
+}
+.container3 .btn a{
+    font-size: 14px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    color: #cacaca;
+    text-decoration: none;
+    position: absolute;
+    margin-top: -3.5vh;
+    margin-left: -1%;
+}
+.container3 .btn a:hover{
+    color: #505050;
+}
+.container4 .flex_box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 81.25%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10vh auto;
+    flex-wrap: wrap
+}
+.container4 .flex_box .flex_box1 .about_us{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 3vh;
+    margin-top: 6vh;
+
+}
+.container4 .flex_box .flex_box1 .about_us i{
+    display: block;
+    height: 2px;
+    width: 25px;
+    background-color: #cacaca;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+.container4 .flex_box .flex_box1 .about_us a{
+    font-size: 14px;
+    font-family: 'ProximaNovaA', sans-serif;
+    color: #cacaca;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.container4 .flex_box .flex_box1 .about_us a:hover{
+    color: #505050;
+}
+.container4 .flex_box .flex_box1 .text p{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #505050;
+    text-align: left;
+    line-height: 1.5;
+}
+.container4 .flex_box .flex_box1 .logo{
+    margin-bottom: 3vh;
+}
+.container4 .flex_box .flex_box1 .logo span{
+    font-size: 30px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    color: #505050;
+}
+.container4 .flex_box .flex_box1{
+    width: 40%;
+}
+.container4 .flex_box .flex_box3{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+.container4 .flex_box .flex_box3 .a .high{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #505050;
+    margin-bottom: 3vh;
+}
+.container4 .flex_box .flex_box3 .c .high{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #505050;
+    margin-bottom: 3vh;
+}
+.container4 .flex_box .flex_box3 .d .high{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #505050;
+    margin-bottom: 3vh;
+}
+
+.container4 .flex_box .flex_box3 .a .proc{
+    position: relative;
+}
+.container4 .flex_box .flex_box3 .c .proc{
+    position: relative;
+}
+.container4 .flex_box .flex_box3 .d .proc{
+    position: relative;
+}
+.container4 .flex_box .flex_box3 .a .proc p{
+    position: absolute;
+    margin-top: -4.5vh;
+    margin-left: 45%;
+    font-size: 36px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    color: #505050;
+}
+.container4 .flex_box .flex_box3 .d .proc p{
+    position: absolute;
+    margin-top: -4.5vh;
+    margin-left: 50%;
+    font-size: 36px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    color: #505050;
+}
+.container4 .flex_box .flex_box3 .c .proc p{
+    position: absolute;
+    margin-top: -4.5vh;
+    margin-left: 50%;
+    font-size: 36px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    color: #505050;
+}
+.container4 .flex_box2 img{
+    width: 95%;
+}
+.container5 .center h2{
+    font-size: 30px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    color: #505050;
+    text-align: center;
+    margin-top: 12vh;
+}
+.container5 .center .text p{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #505050;
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+}
+.container5 .center .team{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.container5 .center .team .flex_box1 .name{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #505050;
+    margin-top: 1.5vh;
+    margin-bottom: 0.5vh;
+}
+.container5 .center .team .flex_box1 .proff{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #737373;
+    margin-bottom: 2vh;
+}
+.container5 .center .team .flex_box1 .number{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #737373;
+}
+.container5 .center .team .flex_box2 .name{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #505050;
+    margin-top: 1.5vh;
+    margin-bottom: 0.5vh;
+}
+.container5 .center .team .flex_box2 .proff{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #737373;
+    margin-bottom: 2vh;
+}
+.container5 .center .team .flex_box2 .number{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #737373;
+}
+.container5 .center .team .flex_box3 .name{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #505050;
+    margin-top: 1.5vh;
+    margin-bottom: 0.5vh;
+}
+.container5 .center .team .flex_box3 .proff{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #737373;
+    margin-bottom: 2vh;
+}
+.container5 .center .team .flex_box3 .number{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #737373;
+}
+.container5 .center .team .flex_box4 .name{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #505050;
+    margin-top: 1.5vh;
+    margin-bottom: 0.5vh;
+}
+.container5 .center .team .flex_box4 .proff{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #737373;
+    margin-bottom: 2vh;
+}
+.container5 .center .team .flex_box4 .number{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #737373;
+}
+.container6 .center{
+    margin-top: 12vh;
+    background-color:#f4f4f4;
+}
+.container6 .center .flex_box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5vh;
+    padding-bottom: 6vh;
+    flex-wrap: wrap;
+}
+.container6 .center .flex_box .text{
+    margin-top: 6vh;
+    margin-left: 5%;
+    width: 40%;
+}
+.container6 .center .flex_box .text h2{
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #505050;
+    margin-bottom: 1vh;
+}
+.container6 .center .flex_box .text p{
+    color: #717171;
+}
+.container6 .center .flex_box .search{
+    margin-left: -20%;
+    margin-top: 3.5vh;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #b9b9b9;
+    width: 45%;
+}
+.container6 .center .flex_box .search .search{
+    height: 4vh;
+    width: 70%;
+    padding-left: 10%;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #b9b9b9;
+}
+.container6 .center .flex_box .search .submit{
+    height: 4vh;
+    width: 30%;
+    background-color: #ffe400;
+    color: #505050;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+}
+footer h2{
+    margin-top: 5vh;
+    text-align: center;
+    margin-bottom: 5vh;
+    color:#505050;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+@media only screen and (max-width : 1550px){
+    .container1 .flex_box2 .text h2{
+    font-size: 55px;
+    font-family: 'ProximaNovaA', sans-serif;
+    font-weight: bold;
+    color: #505050;
+    }
+    .container4 .flex_box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container4 .flex_box .flex_box1{
+        width: 100%;
+    }
+    .container4 .flex_box .flex_box2{
+        margin-top: 5vh;
+    }
+}
+@media only screen and (max-width : 1200px){
+    .container4 .flex_box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container2 .center .galary .flex_box1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media only screen and(max-width: 1020px){
+    .container3 .center .flex_box1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media(max-width: 800px){
+    .container2 .center .galary .h3{
+        margin-bottom: 2.5vh;
+    }
+    .container2 .center .galary .flex_box1{
+        margin: 2vh auto; 
+        justify-content: center;
+        align-items: center;
+    }
+    .container6 .center .flex_box .search .submit{
+        height: 4vh;
+        width: 30%;
+        background-color: #ffe400;
+        color: #505050;
+        font-family: 'ProximaNovaA', sans-serif;
+        font-weight: 700;
+        font-size: 10px;
+    }
+    .container6 .center .flex_box{
+        display: flex;
+    }
+    .container1 .flex_box2 .btn2 a{
+        font-size: 10px;
+        font-family: 'ProximaNovaA', sans-serif;
+        font-weight: bold;
+        color: #cacaca;
+        text-decoration: none;
+        position: absolute;
+        margin-top: -3.5vh;
+        margin-left: 8%;
+    }
+    .container3 .center .btn div a{
+        font-size: 10px;
+        font-family: 'ProximaNovaA', sans-serif;
+        font-weight: bold;
+        color: #cacaca;
+        text-decoration: none;
+        position: absolute;
+        margin-top: -4vh;
+    }
+    .container4 .flex_box .flex_box1 .flex_box3 .all .proc p{
+        position: absolute;
+        margin-top: -4.5vh;
+        margin-left: 45%;
+        font-size: 20px;
+        font-family: 'ProximaNovaA', sans-serif;
+        font-weight: bold;
+        color: #505050;
+        }
+    .container4 .flex_box .flex_box1 .flex_box3 .all .proc img{
+        width: 60%;
+    }
+@media(max-width: 600px){
+    .container2 .center .galary .flex_box1{
+        margin: 2vh auto;
+        width: 50%; 
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
