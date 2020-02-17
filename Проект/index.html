@@ -9,18 +9,40 @@
         <link rel="stylesheet" href="animate.css">
         <link href="all.css" rel="stylesheet">
         <link href="effect.css" rel="stylesheet">
+        <link rel="stylesheet" href="./style/burger.css">
     <body>
         <div class="wrapper">
-            <header>
+            <div class= "header">
                 <div class="logo">
-                    <span>CREATIVE</span>
+                    <a href="#" classs="logo">CREATIVE</a>
+                </div>
+                <div class="contact">
                     <a href="#">CONTACT</a>
-            </div>
-                <div class="btn">
-                    <div class="burger" id="burger">
-                        <a href="#">&#9776;</a>    
-                </div> 
-            </header>
+                </div>
+                <nav class="menu menu--closed">
+                    <ul class="menu_list">
+                        <li>
+                            <a href="#" class="menu_link">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu_link">SERVICES</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu_link">BRAND</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu_link">BLOG</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu_link">ALL WORKS</a>
+                        </li>
+                        <li>
+                            <a href="#" class="menu_link">ABOUT US</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="burger burger--closed"></div>
+            </div>          
             <section class="container1">
                 <div class="flex_box1">
                     <div class="btn3">
@@ -59,45 +81,57 @@
                     <h2>Our Services</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
                     <div class="galary">
-                        <div class="flex_box1">
-                            <h3>web developmetn</h3>
+                        <div class="flex_box1 wow bounceInLeft">
                             <div class="c">
                                 <img src="./img/icon1.png" class="icon" alt="icon">
+                            </div>
+                            <div class="text">
+                                <h3>web developmetn</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
                             </div>
-                    </div>
-                        <div class="flex_box1">
-                            <h3>web developmetn</h3>
+                        </div>
+                        <div class="flex_box1 wow bounceInDown">
                             <div class="c">
                                 <img src="./img/icon2.png" class="icon" alt="icon">
+                            </div>
+                            <div class="text">
+                                <h3>web desing</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
                             </div>
                         </div>
-                        <div class="flex_box1">
-                            <h3>web developmetn</h3>
+                        <div class="flex_box1 wow bounceInRight">
                             <div class="c">
                                 <img src="./img/icon3.png" class="icon" alt="icon">
+                            </div>
+                            <div class="text">
+                                <h3>seo developmetn</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
                             </div>
                         </div>
-                        <div class="flex_box1">
-                            <h3>web developmetn</h3>
+                        <div class="flex_box1 wow bounceInLeft">
                             <div class="c">
                                 <img src="./img/icon4.png" class="icon" alt="icon">
+                            </div>
+                            <div class="text">
+                                <h3>google pagespeed</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
                             </div>
                         </div>
-                        <div class="flex_box1">
-                            <h3>web developmetn</h3>
+                        <div class="flex_box1  wow bounceInUp">
                             <div class="c">
                                 <img src="./img/icon5.png" class="icon" alt="icon">
+                            </div>
+                            <div class="text">
+                                <h3>managment</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
                             </div>
                         </div>
-                        <div class="flex_box1">
-                            <h3>web developmetn</h3>
+                        <div class="flex_box1 wow bounceInRight">
                             <div class="c">
                                 <img src="./img/icon6.png" class="icon" alt="icon">
+                            </div>
+                            <div class="text">
+                                <h3>analitics results</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do </p>
                             </div>
                         </div>
@@ -226,6 +260,7 @@
                         </div>
                     </div>
                     <div class="flex_box2">
+                        <img src="./img/photo.png" class="photo" alt="photo">
                     </div>
                 </div>
             </section>
@@ -283,9 +318,10 @@
                 <h2>&#169; 2018 free-psd-templates.com</h2>
             </footer>
         </div>
+        <script src="js/js.js"></script>
         <script defer src="all.js"></script>
         <script src="wow.min.js"></script>
-        <script src="./js/js.js"></script>
+        <script src="./js/index.js"></script>
         <script>
         new WOW().init();
         </script>
